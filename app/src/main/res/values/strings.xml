@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Temp Structure</string>
+
+    <!--Ads-->
+    <string name="admob_id">ca-app-pub-3940256099942544~3347511713</string>
+
+    <!--General Use-->
+    <string name="unexpected_response">Unexpected response from server!</string>
+    <string name="parsing_error">Parsing error! Please try again after some time!!</string>
+    <string name="connection_timeout">Request Time Out! Please check your internet connection and try again!</string>
+    <string name="no_internet">There is no internet connection! Please make sure you have active internet connection!</string>
+    <string name="share">Share</string>
+    <string name="rate">Rate</string>
+    <string name="privacy_policy">Privacy-Policy</string>
+    <string name="permission">Permission</string>
+    <string name="more_apps">More Apps</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="update_app">Update App</string>
+    <string name="update_notice">This Bulk App Uninstaller app needs to be updated so update the app by clicking on the update button below.</string>
+    <string name="cancel">Cancel</string>
+    <string name="update">Update</string>
+    <string name="no_data">no data found</string>
+
+</resources>

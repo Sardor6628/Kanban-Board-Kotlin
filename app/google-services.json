@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "229959295226",
+    "project_id": "temp-structure",
+    "storage_bucket": "temp-structure.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:229959295226:android:dde074b9741cd60194a943",
+        "android_client_info": {
+          "package_name": "com.example.tempstructure"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBrbtlhqMeGrZuOEdQQHZ5Sa01pS5CsOA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
