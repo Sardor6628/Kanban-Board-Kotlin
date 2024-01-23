@@ -96,10 +96,6 @@ class TempStructureApp : MultiDexApplication(), Application.ActivityLifecycleCal
             setDefaultsAsync(R.xml.remote_config_defaults)
         }
         FirebaseRemoteConfig.getInstance().fetchAndActivate()
-
-        AppConstant.APP_LINK = FirebaseRemoteConfig.getInstance().getString(AppConstant.APP_LINK_KEY)
-        AppConstant.PRIVACY_POLICY_LINK = FirebaseRemoteConfig.getInstance().getString(AppConstant.PRIVACY_LINK_KEY)
-        AppConstant.ACCOUNT_LINK = FirebaseRemoteConfig.getInstance().getString(AppConstant.ACCOUNT_LINK_KEY)
     }
 
     fun showToast(message: String) {

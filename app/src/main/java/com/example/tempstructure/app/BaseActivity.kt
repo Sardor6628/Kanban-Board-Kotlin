@@ -91,6 +91,10 @@ abstract class BaseActivity : AppCompatActivity() {
             UpdateAppDialog(this).show()
         }
 
+        AppConstant.APP_LINK = FirebaseRemoteConfig.getInstance().getString(AppConstant.APP_LINK_KEY)
+        AppConstant.PRIVACY_POLICY_LINK = FirebaseRemoteConfig.getInstance().getString(AppConstant.PRIVACY_LINK_KEY)
+        AppConstant.ACCOUNT_LINK = FirebaseRemoteConfig.getInstance().getString(AppConstant.ACCOUNT_LINK_KEY)
+
         isShowBannerAds = false
         isShowInterstitialAds = false
         isShowRewardInterstitialAds = false
