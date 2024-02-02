@@ -6,11 +6,12 @@ import android.os.Bundle
 import android.view.ViewGroup
 import android.view.Window
 import androidx.appcompat.content.res.AppCompatResources
+import com.example.tempstructure.R
 import com.example.tempstructure.app.AppConstant
 import com.example.tempstructure.databinding.DialogUpdateAppBinding
 import com.example.tempstructure.utils.extensions.openLink
 
-class UpdateAppDialog(context: Context) : Dialog(context) {
+class UpdateAppDialog(context: Context) : Dialog(context, R.style.Theme_Dialog) {
 
     private lateinit var binding: DialogUpdateAppBinding
 

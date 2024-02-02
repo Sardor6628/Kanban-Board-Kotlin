@@ -8,7 +8,7 @@ import android.view.Window
 import androidx.appcompat.content.res.AppCompatResources
 import com.example.tempstructure.R
 
-class LoadingDialog(context: Context) : Dialog(context) {
+class LoadingDialog(context: Context) : Dialog(context, R.style.Theme_Dialog) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
