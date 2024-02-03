@@ -18,7 +18,7 @@
     <string name="next">Next</string>
     <string name="skip">Skip</string>
     <string name="update_app">Update App</string>
-    <string name="update_notice">This Bulk App Uninstaller app needs to be updated so update the app by clicking on the update button below.</string>
+    <string name="update_notice">This app needs to be updated so update the app by clicking on the update button below.</string>
     <string name="cancel">Cancel</string>
     <string name="update">Update</string>
     <string name="no_data">no data found</string>

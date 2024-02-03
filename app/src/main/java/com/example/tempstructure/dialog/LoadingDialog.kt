@@ -18,4 +18,5 @@ class LoadingDialog(context: Context) : Dialog(context, R.style.Theme_Dialog) {
         window?.setBackgroundDrawable(AppCompatResources.getDrawable(context, com.google.android.material.R.color.mtrl_btn_transparent_bg_color))
         setContentView(R.layout.dialog_loading)
     }
+
 }
