@@ -3,6 +3,7 @@
 
     <dimen name="_0dp">0dp</dimen>
     <dimen name="_1dp">1dp</dimen>
+    <dimen name="_1.5dp">1.5dp</dimen>
     <dimen name="_2dp">2dp</dimen>
     <dimen name="_3dp">3dp</dimen>
     <dimen name="_4dp">4dp</dimen>
@@ -239,5 +240,6 @@
     <dimen name="_400dp">400dp</dimen>
     <dimen name="_325dp">325dp</dimen>
     <dimen name="_380dp">380dp</dimen>
+    <dimen name="_180dp">180dp</dimen>
 
 </resources>

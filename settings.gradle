@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Temp Structure"
+rootProject.name = "Kanban Board"
 include ':app'
