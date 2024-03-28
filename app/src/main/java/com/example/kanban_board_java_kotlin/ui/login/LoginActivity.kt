@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
-import android.util.Log
 import android.view.View
 import androidx.activity.result.ActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
@@ -15,8 +14,6 @@ import com.example.kanban_board_java_kotlin.app.BaseActivity
 import com.example.kanban_board_java_kotlin.app.KanbanBoardApp
 import com.example.kanban_board_java_kotlin.databinding.ActivityLoginBinding
 import com.example.kanban_board_java_kotlin.ui.home.HomeActivity
-import com.example.kanban_board_java_kotlin.utils.formatSecondToString
-import com.example.kanban_board_java_kotlin.utils.formatString
 import com.example.kanban_board_java_kotlin.utils.resource.Status
 import com.example.kanban_board_java_kotlin.viewmodel.LoginViewModel
 import com.google.android.gms.auth.api.signin.GoogleSignIn
@@ -29,7 +26,6 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.ExperimentalCoroutinesApi
-import java.util.Date
 
 @OptIn(ExperimentalCoroutinesApi::class)
 @AndroidEntryPoint
@@ -145,7 +141,7 @@ class LoginActivity : BaseActivity(), View.OnClickListener {
                     hideProgress()
                     if (it.data != null) {
                         val user = FirebaseAuth.getInstance().currentUser
-                        prefsUtils.setUseId(user?.uid.toString())
+                        prefsUtils.setUserId(user?.uid.toString())
                         prefsUtils.setLogin(true)
 
                         val intent = Intent(this, HomeActivity::class.java)

@@ -21,6 +21,7 @@ class SplashActivity : BaseActivity() {
         binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        prefsUtils.setUserId("SIVmFx5GaLcErR9I47mv7gv8yPs2")
         startTimer()
     }
 

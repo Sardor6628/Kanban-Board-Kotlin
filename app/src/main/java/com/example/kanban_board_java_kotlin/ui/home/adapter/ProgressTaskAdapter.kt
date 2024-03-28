@@ -38,7 +38,7 @@ class ProgressTaskAdapter(var context: Activity) :
         @SuppressLint("RecyclerView") position: Int
     ) {
         val data = list[position]
-        val startTime = (data.startedTime) ?: 0L
+        val startTime = (data.startedTime) ?: 1L
 
         holder.binding.apply {
             tvTitle.text = data.title

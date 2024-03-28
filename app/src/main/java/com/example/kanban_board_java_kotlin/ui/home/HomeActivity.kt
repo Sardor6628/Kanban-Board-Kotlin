@@ -259,7 +259,7 @@ class HomeActivity : BaseActivity(), View.OnClickListener {
         val user = firebaseAuth.currentUser
         if (user != null) {
             prefsUtils.setLogin(false)
-            prefsUtils.setUseId("")
+            prefsUtils.setUserId("")
             startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }

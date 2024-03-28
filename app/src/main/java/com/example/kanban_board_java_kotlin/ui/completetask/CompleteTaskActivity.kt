@@ -5,6 +5,7 @@ import android.os.Environment
 import android.util.Log
 import android.view.View
 import androidx.activity.viewModels
+import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.kanban_board_java_kotlin.R
 import com.example.kanban_board_java_kotlin.app.AppConstant
@@ -112,13 +113,16 @@ class CompleteTaskActivity : BaseActivity(), View.OnClickListener {
                 writer.writeNext(header)
 
                 taskList.forEach {
+                    val createdTime = it.createdTime ?: 1
+                    val completedTime = it.completedTime ?: 1
+
                     val data1 = arrayOf(
                         it.title,
                         it.description,
-                        (it.createdTime!!/1000).formatString("yyyy.MM.dd"),
-                        (it.createdTime!!/1000).formatString("HH:mm:ss"),
-                        (it.completedTime!!/1000).formatString("yyyy.MM.dd"),
-                        (it.completedTime!!/1000).formatString("HH:mm:ss"),
+                        (createdTime/1000).formatString("yyyy.MM.dd"),
+                        (createdTime/1000).formatString("HH:mm:ss"),
+                        (completedTime/1000).formatString("yyyy.MM.dd"),
+                        (completedTime/1000).formatString("HH:mm:ss"),
                         it.spentTime.formatSecondToString(),
                     )
                     writer.writeNext(data1)

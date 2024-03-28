@@ -17,7 +17,7 @@ class PreferenceUtils(private val sharedPreferences: SharedPreferences) {
         return sharedPreferences.getString(AppConstant.USER_KEY, "").toString()
     }
 
-    fun setUseId(login: String) {
+    fun setUserId(login: String) {
         return sharedPreferences.edit().putString(AppConstant.USER_KEY, login).apply()
     }
 

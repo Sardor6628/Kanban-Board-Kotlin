@@ -82,7 +82,7 @@ class TaskViewModel @Inject constructor(
             } else {
                 todoTaskListState.value?.data?.add(taskResponse)
                 todoTaskListState.value?.data?.sortByDescending { data ->
-                    data.createdTime
+                    data.createdTime ?: 0
                 }
                 todoTaskListState.value = Resource.success(todoTaskListState.value?.data)
             }

@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Kanban Board"
+rootProject.name = "Kanban Board Kotlin"
 include ':app'

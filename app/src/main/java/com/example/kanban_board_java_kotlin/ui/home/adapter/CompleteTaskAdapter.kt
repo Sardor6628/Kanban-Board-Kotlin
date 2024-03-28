@@ -34,7 +34,13 @@ class CompleteTaskAdapter(var context: Context) : RecyclerView.Adapter<CompleteT
         holder.binding.apply {
             tvTitle.text = data.title
             tvDescription.text = data.description
-            tvCompleteTime.text = "Completed on " + (data.completedTime!!/1000).formatString("yyyy/MM/dd, HH:mm:ss")
+
+            if (data.completedTime != null){
+                tvCompleteTime.isVisible = true
+                tvCompleteTime.text = "Completed at: " + (data.completedTime!!/1000).formatString("yyyy/MM/dd, HH:mm:ss")
+            }else{
+                tvCompleteTime.isVisible = false
+            }
 
             if (data.spentTime == 0L){
                 llSpentTime.isVisible = false
